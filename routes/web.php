@@ -19,9 +19,10 @@ Route::get('/', function () {
             'Marco Neri',
             'Luca Rossi',
             'Anna Verdi',
-            'Carlo Bianchi'
+            'Carlo Bianchi',
+            'Miriam Grigi'
         ]
     ];
-        
+
     return view('home', $data);
 });
