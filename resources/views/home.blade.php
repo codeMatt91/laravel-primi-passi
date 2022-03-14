@@ -9,7 +9,12 @@
 </head>
 
 <body>
-    <h1>La prima pagina Laravel</h1>
+    <header>
+        <h1>La prima pagina Laravel</h1>
+        <?php foreach ($students as $student) : ?>
+            <a href="{{ route($student) }}"><strong>{{ $student }}</strong></a>
+        <?php endforeach; ?>
+    </header>
     <p>Studenti della classe #52</p>
     <ul>
         <?php foreach ($students as $student) : ?>
